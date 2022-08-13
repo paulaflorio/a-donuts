@@ -1,0 +1,47 @@
+@import "./variables";
+
+.connect{
+    padding: 8rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    a{
+        @extend .btn;
+    }
+
+
+    @include mobile{
+        flex-direction: column;
+        row-gap: 4rem;
+    }
+}
+
+.connect-text{
+    display: flex;
+    flex-direction: column;
+
+    body.dark &{
+        color: #fff;
+    }
+    
+    span{
+        color: $main-color;
+        font-size: $p-font;
+        font-weight: 500;
+
+        body.dark &{
+            color: $light-blue;
+        }
+
+        @include large{
+            font-size: 3rem;
+        }
+    }
+
+    h2{
+        font-size: $h2-font;
+
+    }
+}
+

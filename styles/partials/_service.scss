@@ -1,0 +1,90 @@
+@import "./variables";
+@import "./responsive";
+
+.service{
+    padding: 5rem 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-text{
+    text-align: center;
+
+    body.dark &{
+        color: #fff;
+    }
+
+    span{
+        font-size: $h2-font;
+
+        @include large{
+            font-size: 4rem;
+        }
+    }
+
+    h2{
+        color: $main-color;
+        font-size: $h2-font;
+        font-weight: 400;
+
+        body.dark &{
+            color: $light-blue;
+        }
+
+    }
+}
+
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30rem;
+    text-align: center;
+    margin: 2rem;
+
+    body.dark & {
+        color: #fff;
+    }
+
+    i{
+        font-size: 3.5rem;
+        color: $main-color;
+
+        body.dark &{
+            color: $light-blue;
+        }
+
+        @include large{
+            font-size: 5rem;
+        }
+    }
+
+    h3{
+        font-size: 1.7rem;
+        margin-top: 3rem;
+
+        @include large{
+            font-size: 2.5rem;
+        }
+    }
+
+    p{
+        font-size: $p-font;
+        margin-top: 3rem;
+
+        @include laptop{
+            font-size: 2rem;
+        }
+    }
+}

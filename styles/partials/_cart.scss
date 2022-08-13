@@ -1,0 +1,248 @@
+@import "./variables";
+
+.carrito{
+    position: fixed!important;
+    background-color: RGBA(185,214,242,.3);
+    position: absolute;
+    min-height: 100vh;
+    height: 100%!important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .5s, opacity 0.5s;
+    z-index: 1000;
+}
+
+.carrito-active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.cart{
+    background-color: #fff;
+    height: 100%;
+    width: 40%;
+    position: fixed;
+    right: 0;
+
+    body.dark &{
+        background-color: $blue-t;
+    }
+
+    @include extra{
+        width: 60%;
+    }
+
+    @include laptop{
+        width: 80%;
+    }
+
+    @include large{
+        width: 100%;
+    }   
+}
+
+#cart-close{
+    color: $black;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: .2rem solid $black;
+    border-radius: .25rem;
+
+    body.dark &{
+        color: #fff;
+    border: .2rem solid #fff;
+
+    }
+}
+
+.cart-title{
+    text-align: center;
+    height: 6rem;
+    background-color: $light-blue;
+    border-bottom: .5rem solid $main-color;
+
+    body.dark & {
+        background-color: $dark-blue;
+    }
+    
+    h2{
+        font-size: 2.7rem;
+        padding: 1rem 0;
+
+        body.dark &{
+            color: #fff;
+        }
+    }
+}
+
+.prod{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    align-items: center;
+    // justify-content: space-between;
+    column-gap: 2rem;
+    width: 100%;
+    margin-bottom: 3rem;
+
+    @include extra{
+        grid-template-columns: repeat(4, 100px);
+        
+    }
+
+    @include laptop{
+        grid-template-columns: repeat(4, 120px);
+        column-gap: 8rem;
+    }
+
+    @include tablet{
+        grid-template-columns: repeat(4, 100px);
+        column-gap: 5rem;
+    }
+
+    @include mobile{
+        column-gap: 3rem;
+    }
+
+    &__img{
+        height: 10rem;
+        // width: auto;
+
+        @include laptop{
+            height: 20rem;
+        }
+
+        @include tablet{
+            height: 10rem;
+        }
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 15rem;
+
+        body.dark &{
+            color: #fff;
+        }
+
+        &__title{
+            font-size: 2rem;
+            padding-bottom: .5rem;
+
+            @include laptop{
+                font-size: 3rem;
+            }
+        }
+        &__price{
+            font-size: 2rem;
+
+            @include laptop{
+                font-size: 3rem;
+            }
+        }
+    }
+
+    &__quantity{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 2rem;
+
+        &__num{
+            font-size: 2rem;
+            color: black;
+
+            body.dark &{
+                color: #fff
+            }
+
+            @include laptop{
+                font-size: 3rem;
+            }
+        }
+
+        &__btn{
+            @extend .icons;
+            cursor: pointer;
+
+        }
+
+    }
+
+    &__remove{
+        @extend .icons;
+        cursor: pointer;
+
+    }   
+}
+
+.cart-text{
+    font-size: 2rem;
+    text-align: center;
+    padding: 4rem 0;
+    color: #191919;
+
+    body.dark &{
+        color: #fff;
+    }
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+
+    body.dark &{
+        color: #fff;
+    }
+
+    &__text{
+        font-size: 3rem;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        @include laptop{
+            font-size: 3.5rem;
+        }
+    }
+
+    &__total{
+        font-size: 2.5rem;
+
+        @include laptop{
+            font-size: 3.5rem;
+        }
+    }
+
+
+}
+
+.btn-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1rem;
+
+    &__item{
+        @extend .btn;
+
+        @include laptop{
+            font-size: 2.5rem;
+        }
+
+    }
+
+}
+
+.item{
+    margin: 1rem;
+}

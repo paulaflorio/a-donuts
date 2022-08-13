@@ -1,0 +1,25 @@
+{
+    "productos": [
+        {
+            "name" : "Strawberry Donuts",
+            "id" : 0,
+            "price" : "250",
+            "imgsrc" : "./img/menu1.jpg"
+    
+        },
+        {
+            "name" : "Chocolate Donuts",
+            "id" : 1,
+            "price" : "270",
+            "imgsrc" : "./img/menu2.jpg"
+    
+        },
+        {
+            "name" : "Lemon Donuts",
+            "id" : 2,
+            "price" : "300",
+            "imgsrc" : "./img/menu3.jpg"
+    
+        }
+    ]
+}

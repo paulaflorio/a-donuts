@@ -1,0 +1,122 @@
+@import "./variables";
+@import "./responsive";
+
+.footer{
+    padding: 4rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+
+    @include mobile{
+        row-gap: 4rem;
+    }
+
+}
+
+.contact-text{
+    display: flex;
+    flex-direction: column;
+
+    body.dark &{
+        color: #fff;
+    }
+
+    span{
+        font-size: $p-font;
+        font-weight: 400;
+        transition: 0.5s ease;
+        
+        @include large{
+            font-size: 2rem;
+        }
+
+    }
+
+    h3{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        transition: 0.5s ease;
+        @include large{
+            font-size: 2rem;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        font-size: $p-font;
+        margin-bottom: .5rem;
+        transition: 0.5s ease;
+        color: $black;
+
+        body.dark &{
+            color: #fff;
+
+            &:hover{
+                color: $main-color;
+            }
+        }
+        
+        &:hover{
+            color: $main-color;
+
+        }
+
+        @include large{
+            font-size: 2rem;
+        }
+    }
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+
+    body.dark &{
+        color: #fff;
+    }
+
+    a{
+        font-size: 3rem;
+        cursor: pointer;
+        margin-right: 2rem;
+        transition: 0.5s ease;
+        color: $black;
+
+        &:hover{
+            color: $main-color;
+        }
+
+        @include large{
+            font-size: 4rem;
+        }
+    }
+}
+
+.address{
+    
+    i{
+        color: $black;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        transition: 0.5s ease;
+
+        body.dark &{
+            color: #fff;
+        }
+        
+        span{
+            margin-left: 1rem;
+            transition: 0.5s ease;
+
+            body.dark &{
+                color: #fff;
+            }
+        }
+
+
+    }
+
+}

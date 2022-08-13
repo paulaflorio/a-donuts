@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- BOXICONS -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./styles/main.css">
+        <title>A-Donuts🍩.</title>
+    </head>
+    <body>
+        <header>
+            <!--Navbar-->
+            <nav>
+                <a href="./index.html" class="logo">
+                    A-Donuts🍩.
+                </a>
+                <div class="menu" id="menu">
+                    <a href="#home" class="menu-link">Home</a>
+                    <a href="#about" class="menu-link">About</a>
+                    <a href="#prod" class="menu-link">Menu</a>
+                    <a href="#service" class="menu-link">Service</a>
+                    <a href="#contact" class="menu-link">Contact</a>
+                    <div class="bx bx-moon moon menu-link" id="darkmode">
+                        <!-- <i class='bx bx-moon'></i> -->
+                    </div>
+                    <div class="cart-icon menu-link" id="cart-open">
+                        <i class='bx bx-shopping-bag'></i>
+                        <div class="num-items">0</div>
+                    </div>
+                    <div class="menu-close" id="menu-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+        
+        <!-- CARIITO  -->
+        <section class="carrito" id="carrito">
+            <div class="cart" id="cart">
+                <i class='bx bx-x' id="cart-close"></i>
+                <div class="cart-title">
+                    <h2>Your shopping cart.</h2>
+                </div>
+
+                <div class="item" id="item">
+            
+                </div>
+
+                <div class="cart-footer" id="cart-footer">
+    
+                </div>
+            </div>
+        </section>
+        <main>
+            <!-- Home Section  -->
+            <section class="home" id="home">
+                <div class="home-content">
+                    <h1>Donuts Taste</h1>
+                    <h2>The tasty food of <br>your choice.</h2>
+                    <a href="#prod">View Menu</a>
+                </div>
+                <div class="home-img">
+                    <img src="./img/donut-scroll.png" alt="">
+                </div>
+            </section>
+            <!--About Section-->
+            <section class="about" id="about">
+                <div class="about-img">
+                    <img src="./img/about.jpg" alt="">
+                </div>
+                <div class="about-content">
+                    <span>About Us</span>
+                    <h2>We make good and <br>tasty donuts</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cumque perspiciatis unde cum vitae vero minus dolor, doloribus sit labore?</p>
+                    <a href="#">See More</a>
+                </div>
+            </section>
+            <!--Menu Section-->
+            <section class="articulo" id="prod">
+                <div class="articulo-text">
+                    <span>Menu</span>
+                    <h2>Tasty menu of the week</h2>
+                </div>
+                <div class="options" id="products">
+                    <!--Menu 1-->
+                    <!-- <div class="box">
+                        <div class="box-img">
+                            <img src="./img/menu1.jpg" alt="">
+                        </div>
+                        <h2>Donuts</h2>
+                        <h3>Tasty Food</h3>
+                        <span>$15.00</span>
+                        <i class='bx bx-cart' ></i>
+                    </div> -->
+                    <!--Menu 2-->
+                    <!-- <div class="box">
+                        <div class="box-img">
+                            <img src="./img/menu2.jpg" alt="">
+                        </div>
+                        <h2>Donuts</h2>
+                        <h3>Tasty Food</h3>
+                        <span>$15.00</span>
+                        <i class='bx bx-cart' ></i>
+                    </div> -->
+                    <!--Menu 3-->
+                    <!-- <div class="box">
+                        <div class="box-img">
+                            <img src="./img/menu3.jpg" alt="">
+                        </div>
+                        <h2>Donuts</h2>
+                        <h3>Tasty Food</h3>
+                        <span>$15.00</span>
+                        <i class='bx bx-cart' ></i>
+                    </div> -->
+                </div>
+            </section>
+            <!--Service Section-->
+            <section class="service" id="service">
+                <div class="service-text">
+                    <span>Service</span>
+                    <h2>We provide best food services</h2>
+                </div>
+                <div class="services">
+                    <!--Service 1-->
+                    <div class="item">
+                        <i class='bx bx-package'></i>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor id omnis recusandae dignissimos natus pariatur!</p>
+                    </div>
+                    <!--Service 2-->
+                    <div class="item">
+                        <i class='bx bx-headphone'></i>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor id omnis recusandae dignissimos natus pariatur!</p>
+                    </div>
+                    <!--Service 3-->
+                    <div class="item">
+                        <i class='bx bx-desktop' ></i>
+                        <h3>Lorem ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor id omnis recusandae dignissimos natus pariatur!</p>
+                    </div>
+                </div>
+            </section>
+            <!--Contact Section-->
+            <section class="connect" id="contact">
+                <div class="connect-text">
+                    <span>Let's Talk</span>
+                    <h2>Connect now</h2>
+                </div>
+                <a href="#">Connect Us</a>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="contact-text">
+                <h3 >Donuts Taste</h3>
+                <span>Connect With Us</span>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                </div>
+            </div>
+            <div class="contact-text">
+                <h3>Menu Links</h3>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#prod">Menu</a>
+                <a href="#service">Service</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="contact-text">
+                <h3>Quick Links</h3>
+                <a href="#contact">Contact</a>
+                <a href="#Privacy">Privacy Policy</a>
+                <a href="#Disclaimer">Disclaimer</a>
+                <a href="#terms">Terms Of Use</a>
+            </div>
+            <div class="contact-text address">
+                <h3>Contact</h3>
+                <i class='bx bxs-map' ><span>Lorem ipsum 444, CABA</span></i>
+                <i class='bx bxs-phone'><span> +4 4444 444</span></i>
+                <i class='bx bxs-envelope' ><span>Example@email.com</span></i>
+            </div>
+        </footer>
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <!-- SweetAlert CDN -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!-- JS  -->
+        <script src="./js/icons.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

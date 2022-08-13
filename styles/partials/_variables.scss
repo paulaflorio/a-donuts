@@ -1,0 +1,45 @@
+@import "./responsive";
+
+$blue-t: #003559;
+$blue-alt: #0353A4;
+$main-color: #006daa;
+$dark-blue:#061A40;
+$light-blue:#B9D6F2;
+$black: #120907;
+
+$big-font: 6.5rem;
+$h2-font:3.5rem;
+$btn-font: 1.7rem;
+$p-font: 1.7rem;
+
+.btn{
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    background-color: $main-color;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: $btn-font;
+
+    &:hover{
+        background-color: #3d85af;
+    }
+
+    @include large{
+        font-size: 2rem;
+    }
+}
+
+.icons{
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    padding: .2rem;
+    margin: 0 .3rem;
+    cursor: pointer;
+
+    body.dark &{
+        color: $light-blue;
+    }
+}

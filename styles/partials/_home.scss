@@ -1,0 +1,45 @@
+@import "./variables";
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10rem;
+    height: 100vh;
+    width: 100%;
+}
+
+.home-content{
+
+    body.dark &{
+        color: #fff;
+    }
+
+    h1{
+        font-size: $big-font;
+        color: $main-color;
+
+        body.dark &{
+            color: $light-blue;
+        }
+    }
+
+    h2{
+        font-size: $h2-font;
+        margin-top: 4rem;
+    }
+
+    a{
+        @extend .btn;
+        margin-top: 4rem;
+    }
+}
+
+.home-img{
+    width: 30%;
+    margin-left: 4rem;
+
+    img{
+        width: 100%;
+    }
+}

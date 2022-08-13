@@ -1,0 +1,205 @@
+nav{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+    box-shadow: 0 0.5rem 5rem rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease;
+    background-color: #fff;
+    z-index: 100;
+
+    @include large{
+        padding: 2rem;
+    }
+
+    body.dark & {
+        background-color: $blue-t;
+        box-shadow: -1px 6px 13px 0px rgba(0,0,0,0.44);
+
+    }
+
+    a{
+        font-size: 2rem;
+        text-decoration: none;
+    }
+
+    .logo{
+        font-weight: 600;
+        color: $main-color;
+
+        body.dark & {
+            color: $light-blue;
+        }
+
+        @include large{
+            font-size: 2.5rem;
+        }
+    }
+
+    i{
+        color: $black;
+        font-size: 2rem;
+        cursor: pointer;
+        margin: 0 1.5rem;
+
+        body.dark & {
+            color: #fff;
+
+            &:hover{
+                color: $main-color;
+            }
+        }
+
+        &:hover{
+            color: $main-color;
+        }
+    }
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    transition: .4s;
+
+    @include tablet{
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 3rem;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        right: -100%;
+        background-color: #fff;
+
+        body.dark &{
+            background-color: $blue-t;
+        }
+    }
+
+    a{
+        color: $black;
+        font-size: 1.7rem;
+        font-weight: 500;
+        padding: 0.7rem 1.7rem;
+        transition: .4s;
+
+        body.dark & {
+            color: #fff;
+
+            &:hover{
+                color: $main-color;
+            }
+        }
+
+        &:hover{
+            color: $main-color;
+        }
+
+        @include large{
+            font-size: 2rem;
+        }
+
+        @include tablet{
+            font-size: 3rem;
+        }
+    }
+
+    // i{
+    //     color: $dark-color;
+    //     font-size: 2rem;
+    //     cursor: pointer;
+    // }
+}
+
+#darkmode{
+    color: $black;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0 1.5rem;
+    transition: .4s;
+
+    body.dark & {
+        color: #fff;
+
+        &:hover{
+            color: $main-color;
+        }
+    }
+
+    &:hover{
+        color: $main-color;
+    }
+
+    @include tablet{
+        font-size: 4rem;
+    }
+}
+
+.menu-close{
+    position: absolute;
+    right: 1rem;
+    display: none;
+
+    @include tablet{
+        display: inline-flex;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    i{
+        @include tablet{
+            font-size: 4rem;
+        }
+    }
+}
+
+.menu-toggle{
+    display: none;
+
+    @include tablet{
+        display: block;
+        
+    }
+
+    i{
+        @include tablet{
+            font-size: 4rem;
+        }
+    }
+
+}
+
+.cart-icon{
+    position: relative;
+
+    i{
+
+        @include tablet{
+            font-size: 4rem;
+        }
+    }
+}
+
+.num-items{
+    display: flex;
+    align-items: center;
+    background-color: $main-color;
+    position: absolute;
+    font-size: 1.5rem;
+    padding: .1rem .3rem;
+    color: #fff;
+    top: -1rem;
+    right: 0;
+    border-radius: .25rem;
+    display: none;
+}
+
+
+.show-menu{
+    right: 0 !important;
+}
