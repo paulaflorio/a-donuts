@@ -28,21 +28,21 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 
 // SHOW CART 
 
-const cartSection = document.getElementById('carrito');
-const cartOpen = document.getElementById('cart-open');
-const cartClose = document.getElementById('cart-close');
+// const cartSection = document.getElementById('carrito');
+// const cartOpen = document.getElementById('cart-open');
+// const cartClose = document.getElementById('cart-close');
 
-if(cartOpen){
-    cartOpen.addEventListener('click', () => {
-        cartSection.classList.add('carrito-active');
-    })
-}
+// if(cartOpen){
+//     cartOpen.addEventListener('click', () => {
+//         cartSection.classList.add('carrito-active');
+//     })
+// }
 
-if(cartClose){
-    cartClose.addEventListener('click', () => {
-        cartSection.classList.remove('carrito-active');
-    })
-}
+// if(cartClose){
+//     cartClose.addEventListener('click', () => {
+//         cartSection.classList.remove('carrito-active');
+//     })
+// }
 
 // DARKMODE 
 

@@ -127,7 +127,7 @@ const crearFooter = () => {
     $('#cart-footer').empty();
 
     if(Object.keys(carrito).length === 0){
-        $('#cart-footer').append(`<h3 class="cart-text">Your cart is empty</h3>`);
+        $('#cart-footer').append(`<h3 class="cart-empty">Your cart is empty</h3>`);
         return
     }
 
